@@ -36,6 +36,6 @@ if ($count == 1) {
         die("Not Valid User Type. Check with your application administartor");
 
 } else {
-    header("location: index.php?msg=Wrong%20Username%20or%20Password&type=error");
+    header("location: index.php?msg=Usuario%20ou%20senha%20incorreto&type=error");
 }
 ?>

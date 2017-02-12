@@ -7,7 +7,7 @@ include_once("init.php");
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Adic. Categoria</title>
+    <title>PDV Web -  Adic. Categoria</title>
 
     <!-- Stylesheets -->
 
@@ -43,7 +43,7 @@ include_once("init.php");
                 echo "upload/" . $_SESSION['logo'];
             } else {
                 echo "upload/posnic.png";
-            } ?>" alt="Point of Sale"/></a>
+            } ?>" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->
@@ -59,13 +59,14 @@ include_once("init.php");
 
         <div class="side-menu fl">
 
-                    <h3>Gerenciar Estoque</h3>
-                    <ul>
-                        <li><a href="add_stock.php">Adic. Estoque/Produto</a></li>
-                        <li><a href="view_product.php">Visualizar Estoque/Produto</a></li>
-                        <li><a href="view_category.php">Visualizar Categoria</a></li>
-                        <li><a href="view_stock_availability.php">Visualizar Disponibilidade</a></li>
-                    </ul>
+        <h3>Gerenciar Estoque</h3>
+        <ul>
+            <li><a href="add_stock.php">Adic. Estoque/Produto</a></li>
+            <li><a href="view_product.php">Visualizar Estoque/Produto</a></li>
+            <li><a href="add_category.php">Adic. Categoria</a></li>
+            <li><a href="view_category.php">Visualizar Categoria</a></li>
+            <li><a href="view_stock_availability.php">Disponibilidade</a></li>
+        </ul>
 
         </div>
         <!-- end side-menu -->
@@ -139,7 +140,6 @@ include_once("init.php");
 
                     <form name="form1" method="post" id="form1" action="">
 
-                        <p><strong>Adic. Categoria </strong> - Adic. Novo ( Control +A)</p>
                         <table class="form" border="0" cellspacing="0" cellpadding="0">
                             <tr>
                                 <td><span class="man">*</span>Nome:</td>

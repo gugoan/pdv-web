@@ -6,7 +6,7 @@ include_once("init.php");
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POSNIC - Update Supplier</title>
+        <title>PDV Web -  Update Supplier</title>
 
         <!-- Stylesheets -->
 
@@ -57,7 +57,7 @@ if (isset($_SESSION['logo'])) {
 } else {
     echo "upload/posnic.png";
 }
-?>" alt="Point of Sale"/></a>
+?>" alt="PDV Web"/></a>
 
             </div>
             <!-- end full-width -->

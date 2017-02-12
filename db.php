@@ -3,10 +3,10 @@
 include("db.class.php");
 
 // Open the base (construct the object):
-$base = "stock";
+$base = "pdvweb";
 $server = "localhost";
 $user = "root";
-$pass = "";
+$pass = "ubuntu";
 $db = new DB($base, $server, $user, $pass);
 /*
 

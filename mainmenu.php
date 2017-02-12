@@ -14,8 +14,8 @@
                 <li><a href="#" class="sales-tab">Vendas</a></li>
                 <li><a href="#" class="customers-tab">Clientes</a></li>
                 <li><a href="#" class="purchase-tab">Compra</a></li>
-                <li><a href="view_supplier.php" class="active-tab supplier-tab">Fornecedor</a></li>
-                <li><a href="view_product.php" class="active-tab stock-tab">Estoque / Produto</a></li>
-                <li><a href="#" class="payment-tab">Contas a Pagar / Receber</a></li>
+                <li><a href="view_supplier.php" class="active-tab supplier-tab">Fornecedores</a></li>
+                <li><a href="view_product.php" class="active-tab stock-tab">Estoque / Produtos</a></li>
+                <li><a href="#" class="payment-tab">Financeiro</a></li>
                 <li><a href="#" class="report-tab">Relatórios</a></li>
             </ul>

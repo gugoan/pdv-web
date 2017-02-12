@@ -6,7 +6,7 @@ include_once("init.php");
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POSNIC - Efetuar Compra</title>
+        <title>PDV Web -  Efetuar Compra</title>
 
         <!-- Stylesheets -->
 
@@ -47,7 +47,7 @@ include_once("init.php");
         } else {
             echo "upload/posnic.png";
         }
-        ?>" alt="Point of Sale"/></a>
+        ?>" alt="PDV Web"/></a>
 
             </div>
             <!-- end full-width -->

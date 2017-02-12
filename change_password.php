@@ -7,7 +7,7 @@ include_once("init.php");
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Dashboard</title>
+    <title>PDV Web -  Dashboard</title>
 
     <!-- Stylesheets -->
 
@@ -41,7 +41,7 @@ include_once("init.php");
                 echo "upload/" . $_SESSION['logo'];
             } else {
                 echo "upload/posnic.png";
-            } ?>" alt="Point of Sale"/></a>
+            } ?>" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->
@@ -90,14 +90,14 @@ include_once("init.php");
                         $old_pass = $_POST['old_pass'];
                         $count = $db->countOf("stock_user", "username='$username' and password='$old_pass'");
                         if ($count == 0) {
-                            echo "<br><font color=red size=6px >Old Password is wrong!</font>";
+                            echo "<br><font color=red size=6px >Senha antiga incorreta!</font>";
                         } else {
                             if (trim($_POST['new_pass']) == trim($_POST['confirm_pass'])) {
                                 $con = $_POST['confirm_pass'];
                                 $db->query("update stock_user  SET password='$con' where username='$username'");
-                                echo "<br><font color=green size=6px >Password is Successfuly updated!</font>";
+                                echo "<br><font color=green size=6px >Senha atualizada com sucesso!</font>";
                             } else {
-                                echo "<br><font color=red size=6px >Confirm password is Wrong!</font>";
+                                echo "<br><font color=red size=6px >Confirmação de senha incorreta!</font>";
                             }
                         }
                     }
@@ -107,7 +107,7 @@ include_once("init.php");
                                cellpadding="0">
 
                             <tr>
-                                <td>Old Password</td>
+                                <td>Senha atual</td>
                                 <td><input type="password" name="old_pass" readonly="readonly"></td>
                             </tr>
                             <tr>
@@ -115,7 +115,7 @@ include_once("init.php");
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>New Password</td>
+                                <td>Senha Nova</td>
                                 <td><input type="password" name="new_pass" readonly="readonly"></td>
                             </tr>
                             <tr>
@@ -123,7 +123,7 @@ include_once("init.php");
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>Confirm Password</td>
+                                <td>Confirmação da Senha Nova</td>
                                 <td><input type="password" name="confirm_pass" readonly="readonly"></td>
                             </tr>
                             <tr>
@@ -143,7 +143,7 @@ include_once("init.php");
                                 </td>
                                 <td>
                                     <input class="button round red   text-upper" type="reset" name="Reset"
-                                           value="Reset"></td>
+                                           value="Limpar"></td>
                             </tr>
 
                         </table>
@@ -177,31 +177,6 @@ include_once("init.php");
 
 <!-- FOOTER -->
 <div id="footer">
-    <div id="fb-root"></div>
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=286371564842269";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <div class="fb-like" data-href="https://www.facebook.com/posnic.point.of.sale" data-width="450"
-         data-show-faces="true" data-send="true"></div>
-    <script type="text/javascript">
-        (function () {
-            var po = document.createElement('script');
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(po, s);
-        })();
-    </script>
-    <div class="g-plusone" data-href="https://plus.google.com/u/0/107268519615804538483"></div>
-
     <p>Nome da Empresa - www.nomedaempresa.com.br</a>.
     </p>
 
