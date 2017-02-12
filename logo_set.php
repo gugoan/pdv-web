@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Store Logo</title>
+    <title>PDV Web -  Store Logo</title>
 
     <!-- Stylesheets -->
 
@@ -57,7 +57,7 @@
                 echo "upload/" . $_SESSION['logo'];
             } else {
                 echo "upload/posnic.png";
-            } ?>" alt="Point of Sale"/></a>
+            } ?>" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->

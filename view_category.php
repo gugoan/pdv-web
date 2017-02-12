@@ -6,7 +6,7 @@ include_once("init.php");
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POSNIC - Adicionar Fornecedor</title>
+        <title>PDV Web -  Adicionar Fornecedor</title>
 
         <!-- Stylesheets -->
         <!---->
@@ -45,7 +45,7 @@ include_once("init.php");
         } else {
             echo "upload/posnic.png";
         }
-        ?>" alt="Point of Sale"/></a>
+        ?>" alt="PDV Web"/></a>
 
             </div>
             <!-- end full-width -->
@@ -65,8 +65,9 @@ include_once("init.php");
                     <ul>
                         <li><a href="add_stock.php">Adic. Estoque/Produto</a></li>
                         <li><a href="view_product.php">Visualizar Estoque/Produto</a></li>
+                        <li><a href="add_category.php">Adic. Categoria</a></li>
                         <li><a href="view_category.php">Visualizar Categoria</a></li>
-                        <li><a href="view_stock_availability.php">Visualizar Disponibilidade</a></li>
+                        <li><a href="view_stock_availability.php">Disponibilidade</a></li>
                     </ul>
 
                 </div>
@@ -91,7 +92,7 @@ include_once("init.php");
                             <table>
                                 <form action="" method="post" name="search">
                                     <input name="searchtxt" type="text" class="round my_text_box" placeholder="Pesquisar">
-                                    &nbsp;&nbsp;<input name="Search" type="submit" class="my_button round blue   text-upper"
+                                    &nbsp;<input name="Search" type="submit" class="my_button round blue   text-upper"
                                                        value="Pesquisar">
                                 </form>
                                 <form action="" method="get" name="limit_go">
@@ -108,13 +109,13 @@ include_once("init.php");
 
                                     <input type="hidden" name="table" value="category_details">
                                     <input type="hidden" name="return" value="view_category.php">
-                                    <input type="button" name="selectall" value="Selecinar Tudo"
+                                    <input type="button" name="selectall" value="Marcar Todos"
                                            class="my_button round blue   text-upper" onClick="checkAll()"
                                            style="margin-left:5px;"/>
-                                    <input type="button" name="unselectall" value="De-Selecinar Tudo"
+                                    <input type="button" name="unselectall" value="Desmarcar Tudo"
                                            class="my_button round blue   text-upper" onClick="uncheckAll()"
                                            style="margin-left:5px;"/>
-                                    <input name="dsubmit" type="button" value="Excluir Selecioados"
+                                    <input name="dsubmit" type="button" value="Excluir"
                                            class="my_button round blue   text-upper" style="margin-left:5px;"
                                            onclick="return confirmDeleteSubmit()"/>
 

@@ -7,7 +7,7 @@ include_once("init.php");
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Dashboard</title>
+    <title>PDV Web -  Dashboard</title>
 
     <!-- Stylesheets -->
 
@@ -44,7 +44,7 @@ include_once("init.php");
                 echo "upload/" . $_SESSION['logo'];
             } else {
                 echo "upload/posnic.png";
-            } ?>" alt="Point of Sale"/></a>
+            } ?>" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->
@@ -88,13 +88,13 @@ include_once("init.php");
                 <div class="content-module-main cf">
 
 
-                    <table style="width:350px; float:left;" border="0" cellpadding="0" cellspacing="0">
+                    <table style="width:300px; float:left;" border="0" cellpadding="0" cellspacing="0">
                         <tr>
                             <td width="250" align="left">&nbsp;</td>
                             <td width="150" align="left">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td align="left">Total de Produtos Cadastrados</td>
+                            <td align="left">Total de Produtos</td>
                             <td align="left"><?php echo $count = $db->countOfAll("stock_avail"); ?>&nbsp;</td>
                         </tr>
                         <tr>
@@ -102,7 +102,7 @@ include_once("init.php");
                             <td align="left">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td align="left">Total de Vendas Realizadas</td>
+                            <td align="left">Total de Vendas</td>
                             <td align="left"><?php echo $count = $db->countOfAll("stock_sales"); ?></td>
                         </tr>
                         <tr>
@@ -110,7 +110,7 @@ include_once("init.php");
                             <td align="left">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td align="left">Total de Fornecedores Cadastrados</td>
+                            <td align="left">Total de Fornecedores</td>
                             <td align="left"><?php echo $count = $db->countOfAll("supplier_details"); ?></td>
                         </tr>
                         <tr>
@@ -118,7 +118,7 @@ include_once("init.php");
                             <td align="left">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td align="left">Total de Clientes Cadastrados</td>
+                            <td align="left">Total de Clientes</td>
                             <td align="left"><?php echo $count = $db->countOfAll("customer_details"); ?></td>
                         </tr>
                         <tr>
@@ -131,7 +131,7 @@ include_once("init.php");
                         </tr>
                     </table>
 
-                    <table style="width:600px; margin-left:50px; float:left;" border="0" cellspacing="0"
+                    <table style="width:550px; margin-left:50px; float:left;" border="0" cellspacing="0"
                            cellpadding="0">
                         <tr>
                             <td>&nbsp;</td>
@@ -149,12 +149,12 @@ include_once("init.php");
                         <tr>
                             <td>&nbsp;</td>
                             <td align="left">Adic. Categoria (Ctrl+4 )</td>
-                            <td align="left">Adicionar Fornecedor (Ctrl+5 )</td>
+                            <td align="left">Adic. Fornecedor (Ctrl+5 )</td>
 
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
-                            <td align="left">Adicionar Cliente (Ctrl+6)</td>
+                            <td align="left">Adic. Cliente (Ctrl+6)</td>
                             <td align="left">Visualizar Estoque (Ctrl+7)</td>
 
                         </tr>
@@ -172,7 +172,7 @@ include_once("init.php");
                         </tr>
 
                     </table>
-                    <!--<ul class="temporary-button-showcase">
+                    <!-- <ul class="temporary-button-showcase">
                         <li><a href="#" class="button round blue image-right ic-add text-upper">Add</a></li>
                         <li><a href="#" class="button round blue image-right ic-edit text-upper">Edit</a></li>
                         <li><a href="#" class="button round blue image-right ic-delete text-upper">Delete</a></li>
@@ -182,7 +182,7 @@ include_once("init.php");
                         <li><a href="#" class="button round blue image-right ic-print text-upper">Print</a></li>
                         <li><a href="#" class="button round blue image-right ic-refresh text-upper">Refresh</a></li>
                         <li><a href="#" class="button round blue image-right ic-search text-upper">Search</a></li>
-                    </ul>-->
+                    </ul> -->
 
                 </div>
                 <!-- end content-module-main -->

@@ -17,7 +17,7 @@ $gump = new GUMP();
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Store Logo</title>
+    <title>PDV Web -  Recuperar Senha</title>
 
     <!-- Stylesheets -->
 
@@ -45,7 +45,7 @@ $gump = new GUMP();
                 },
                 messages: {
                     name: {
-                        required: "Please Enter The Answer"
+                        required: "Informe a Resposta"
                     }
                 }
             });
@@ -82,7 +82,7 @@ $gump = new GUMP();
 
         <div id="login-intro" class="fl">
 
-            <h1> Forgot your password </h1>
+            <h1> Recuperar Senha </h1>
 
 
         </div>
@@ -94,7 +94,7 @@ $gump = new GUMP();
                 echo "upload/" . $_SESSION['logo'];
             } else {
                 echo "upload/posnic.png";
-            } ?>" alt="Point of Sale"/></a>
+            } ?>" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->
@@ -114,13 +114,13 @@ $gump = new GUMP();
             if ($count > 0){
             $line = $db->queryUniqueObject("SELECT * FROM stock_user where answer ='" . $name . "'");
 
-            echo " User Name: <strong style=color:blue> $line->username </strong> <br><br>";
-            echo " Password: <strong style=color:blue>  $line->password </strong> ";
+            echo " Usuário: <strong style=color:blue> $line->username </strong> <br><br>";
+            echo " Senha: <strong style=color:blue>  $line->password </strong> ";
             ?>
-            <br> <br> <br> <a href="index.php" class="button blue round side-content">Dashboard</a>
+            <br> <br> <br> <a href="index.php" class="button blue round side-content">Painel</a>
         <?php
         } else {
-            $data = "Answer Is Wrong";
+            $data = "Resposta errada!";
             echo "<script>window.location = 'forget_pass.php?msg=$data';</script>";
         }
         echo "</p></fieldset>";
@@ -140,10 +140,10 @@ $gump = new GUMP();
             </p>
 
             <form action="forget_pass.php" method="POST" id="login-form" class="cmxform" enctype="multipart/form-data">
-                What's your favorite movie?
+                Qual seu filme preferido?
                 <input type="text" name="name" id="name" class="round full-width-input"><br><br>
-                <input type="submit" name="submit" value="Submit" class="button round blue image-right ic-right-arrow">
-                <a href="index.php" class="button blue round side-content">Dashboard</a>
+                <input type="submit" name="submit" value="Enviar" class="button round blue image-right ic-right-arrow">
+                <a href="index.php" class="button blue round side-content">Painel</a>
             </form>
             </fieldset>
         <?php } ?>
@@ -154,29 +154,6 @@ $gump = new GUMP();
 
 <!-- FOOTER -->
 <div id="footer">
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=286371564842269";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <div id="fb-root"></div>
-    <div class="fb-like" data-href="https://www.facebook.com/posnic.point.of.sale" data-width="450"
-         data-show-faces="true" data-send="true"></div>
-    <div class="g-plusone" data-href="https://plus.google.com/u/0/107268519615804538483"></div>
-    <script type="text/javascript">
-        (function () {
-            var po = document.createElement('script');
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(po, s);
-        })();
-    </script>
     <p>Nome da Empresa - www.nomedaempresa.com.br</a>.
     </p>
 

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Login to Control Panel</title>
+    <title>PDV Web -  Login to Control Panel</title>
 
     <!-- Stylesheets -->
 
@@ -54,7 +54,7 @@
 
         <!-- Change this image to your own company's logo -->
         <!-- The logo will automatically be resized to 39px height. -->
-        <a href="#" id="company-branding" class="fr"><img src="upload/posnic.png" alt="Point of Sale"/></a>
+        <a href="#" id="company-branding" class="fr"><img src="upload/posnic.png" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->

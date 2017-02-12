@@ -6,7 +6,7 @@ include_once("init.php");
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POSNIC - Stock</title>
+        <title>PDV Web -  Estoque/Produto</title>
 
         <!-- Stylesheets -->
         <!---->
@@ -47,7 +47,7 @@ include_once("init.php");
         } else {
             echo "upload/posnic.png";
         }
-        ?>" alt="Point of Sale"/></a>
+        ?>" alt="PDV Web"/></a>
 
             </div>
             <!-- end full-width -->
@@ -68,8 +68,8 @@ include_once("init.php");
                         <li><a href="add_stock.php">Adic. Estoque/Produto</a></li>
                         <li><a href="view_product.php">Visualizar Estoque/Produto</a></li>
                         <li><a href="add_category.php">Adic. Categoria</a></li>
-                        <li><a href="view_category.php">Visualizar Category</a></li>
-                        <li><a href="view_stock_availability.php">Visualizar Disponibilidade</a></li>
+                        <li><a href="view_category.php">Visualizar Categoria</a></li>
+                        <li><a href="view_stock_availability.php">Disponibilidade</a></li>
                     </ul>
 
                 </div>
@@ -316,7 +316,7 @@ include_once("init.php");
                                             <th>Nome</th>
                                             <th>Código</th>
                                             <th>Data</th>
-                                            <th>Forncedor</th>
+                                            <th>Fornecedor</th>
                                             <th>Preço de Venda</th>
                                             <th>Estoque</th>
                                             <th>Alterar/Excluir</th>

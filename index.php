@@ -16,7 +16,7 @@ if (isset($_SESSION['username'])) {
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>POSNIC - Login to Control Panel</title>
+    <title>PDV Web -  Login to Control Panel</title>
 
     <!-- Stylesheets -->
 
@@ -69,7 +69,7 @@ if (isset($_SESSION['username'])) {
                 echo "upload/" . $_SESSION['logo'];
             } else {
                 echo "upload/posnic.png";
-            } ?>" alt="Point of Sale"/></a>
+            } ?>" alt="PDV Web"/></a>
 
     </div>
     <!-- end full-width -->
@@ -105,13 +105,13 @@ if (isset($_SESSION['username'])) {
 
             <p>
                 <label for="login-username">Usuário</label>
-                <input type="text" id="login-username" class="round full-width-input" placeholder="admin"
+                <input type="text" id="login-username" class="round full-width-input"
                        name="username" autofocus/>
             </p>
 
             <p>
                 <label for="login-password">Senha</label>
-                <input type="password" id="login-password" name="password" placeholder="admin"
+                <input type="password" id="login-password" name="password"
                        class="round full-width-input"/>
             </p>
 
