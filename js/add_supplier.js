@@ -33,12 +33,12 @@
                 },
                 messages: {
                     name: {
-                        required: "Please enter a supplier Name",
+                        required: "Informe o nome",
                         minlength: "Supplier Name must consist of at least 3 characters",
                         maxlength: "Supplier Name is too long "
                     },
                     contact1: {
-                        required: "Please enter a contact number",
+                        required: "Informe o numero de contato",
                         minlength: "Customer must consist of at least 10 characters",
                         maxlength: "Contact No should not be more than 13 digits"
                     },

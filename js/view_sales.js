@@ -256,7 +256,7 @@ $(document).ready(function () {
         },
         messages: {
             name: {
-                required: "Please enter a supplier Name",
+                required: "Informe o nome",
                 minlength: "supplier must consist of at least 3 characters"
             },
             address: {

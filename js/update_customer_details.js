@@ -33,7 +33,7 @@
                         maxlength: "Customer name is too long !"
                     },
                     contact1: {
-                        required: "Please enter a contact number",
+                        required: "Informe o numero de contato",
                         minlength: "Contact No must consist of at least 10 characters"
                         maxlength: "Contact No should not be more than 13 digits"
                     },

@@ -61,14 +61,20 @@ include_once("init.php");
         <div class="side-menu fl">
 
             <h3>ACESSO RÁPIDO</h3>
-            <ul>
+<!--             <ul>
                 <li><a href="add_sales.php">Efetuar Venda</a></li>
                 <li><a href="add_purchase.php">Efetuar Compra</a></li>
                 <li><a href="add_supplier.php">Adicionar Fornecedor</a></li>
                 <li><a href="add_customer.php">Adicionar Cliente</a></li>
                 <li><a href="view_report.php">Relatórios</a></li>
+            </ul> -->
+            <ul>
+                <li><a href="#">Efetuar Venda</a></li>
+                <li><a href="#">Efetuar Compra</a></li>
+                <li><a href="#">Adicionar Fornecedor</a></li>
+                <li><a href="#">Adicionar Cliente</a></li>
+                <li><a href="#">Relatórios</a></li>
             </ul>
-
         </div>
         <!-- end side-menu -->
 

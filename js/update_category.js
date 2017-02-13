@@ -19,7 +19,7 @@
                 },
                 messages: {
                     name: {
-                        required: "Please enter a Category Name",
+                        required: "Informe o nome",
                         minlength: "Category Name must consist of at least 3 characters"
                     },
                     address: {

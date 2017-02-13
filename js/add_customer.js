@@ -33,17 +33,17 @@
                 },
                 messages: {
                     name: {
-                        required: "Please enter a supplier name",
-                        minlength: "Customer name must be at least 3 characters"
+                        required: "Informe o nome",
+                        minlength: "Necessario informar no minimo 3 caracteres"
                     },
                     contact1: {
-                        required: "Please enter a contact number",
-                        minlength: "Contact must consist of at least 10 digits",
-                        maxlength: "Contact No should not be more than 13 digits"
+                        required: "Informe o numero",
+                        minlength: "Minimo de 10 digitos",
+                        maxlength: "Maximo de 13 digitos"
                     },
                     address: {
-                        minlength: "Customer Address must be at least 3 characters long",
-                        maxlength: "Address is too long !"
+                        minlength: "Necessario informar no minimo 3 caracteres",
+                        maxlength: "Texto muito longo !"
                     }
                 }
             });

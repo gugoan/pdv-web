@@ -83,7 +83,6 @@ include_once("init.php");
 
                 <div class="content-module-main cf">
                     <form name="form1" method="post" id="form1" action="">
-                        
                         <table class="form" border="0" cellspacing="0" cellpadding="0">
                             <?php
                             if (isset($_POST['id'])) {
@@ -96,7 +95,7 @@ include_once("init.php");
 
 
                                 if ($db->query("UPDATE supplier_details  SET supplier_name ='$name',supplier_address='$address',supplier_contact1='$contact1',supplier_contact2='$contact2' where id='$id'"))
-                                    echo "<br><font color=green size=+1 > [ $name ] Supplier Details Updated!</font>";
+                                    echo "<br><font color=green size=+1 >Fornecedor atualizado com sucesso!</font>";
                                 else
                                     echo "<br><font color=red size=+1 >Erro ao Gravar !</font>";
 

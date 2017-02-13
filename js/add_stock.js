@@ -42,18 +42,18 @@
                 },
                 messages: {
                     name: {
-                        required: "Please Enter Stock Name",
-                        minlength: "Stock Name must consist of at least 3 characters"
+                        required: "Informe o COD do estoque",
+                        minlength: "Minimo de 3 caracteres"
                     },
                     stockid: {
-                        required: "Please Enter Stock ID",
+                        required: "Informe o COD do estoque",
                         // minlength: "Category Name must consist of at least 3 characters"
                     },
                     sell: {
-                        required: "Please Enter Selling Price",
+                        required: "Informe o preco de venda",
                     },
                     cost: {
-                        required: "Please Enter Cost Price",
+                        required: "Informe o preco de custo",
                     }
                 }
             });

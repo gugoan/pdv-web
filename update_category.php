@@ -85,7 +85,6 @@ include_once("init.php");
 
                 <div class="content-module-main cf">
                     <form name="form1" method="post" id="form1" action="">
-                        <p><strong>Adic. Estoque </strong> - Adic. Novo ( Control + 3)</p>
                         <table class="form" border="0" cellspacing="0" cellpadding="0">
                             <?php
                             if (isset($_POST['id'])) {
@@ -96,7 +95,7 @@ include_once("init.php");
 
 
                                 if ($db->query("UPDATE category_details  SET category_name='$name',category_description='$address' where id='$id'"))
-                                    echo "<br><font color=green size=+1 > [ $name ] Categoria atualizado com!</font>";
+                                    echo "<br><font color=green size=+1 >Categoria atualizado com sucesso!</font>";
                                 else
                                     echo "<br><font color=red size=+1 >Erro ao Gravar !</font>";
 

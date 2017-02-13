@@ -86,7 +86,6 @@ include_once("init.php");
 
                 <div class="content-module-main cf">
                     <form name="form1" method="post" id="form1" action="">
-                        <p><strong>Adicionar Informações do Fornecedor </strong> - Adic. Novo ( Control + U)</p>
                         <table class="form" border="0" cellspacing="0" cellpadding="0">
                             <?php
                             if (isset($_POST['id'])) {
@@ -101,7 +100,7 @@ include_once("init.php");
 
 
                                 if ($db->query("UPDATE stock_details  SET stock_name ='$name',supplier_id='$supplier',company_price='$cost',selling_price='$sell',category='$Category',date='$date'  where id=$id"))
-                                    echo "<br><font color=green size=+1 > [ $name ] Supplier Details Updated!</font>";
+                                    echo "<br><font color=green size=+1 >Produto atualizado com sucesso!</font>";
                                 else
                                     echo "<br><font color=red size=+1 >Erro ao Gravar !</font>";
 

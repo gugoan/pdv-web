@@ -27,7 +27,7 @@
                 },
                 messages: {
                     name: {
-                        required: "Please enter a Supplier Name",
+                        required: "Informe o nome",
                         minlength: "Supplier must consist of at least 3 characters",
                         maxlength: "Supplier name is too long !"
                     },
